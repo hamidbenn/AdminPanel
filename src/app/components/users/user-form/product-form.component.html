@@ -1,0 +1,89 @@
+<div >
+  <div class="card-body">
+    <h3 class="text-center">Details</h3>
+    <form #productForm="ngForm" (ngSubmit)="onSubmitEvent(productForm)">
+      <input type="hidden" name="$key" #$key="ngModel" [(ngModel)]="productService.selectedProduct.$key">
+      <div class="div">
+        <p>Full Name :</p>
+        <div class="form-group">
+          <input
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="name"
+            #name="ngModel"
+            [(ngModel)]="productService.selectedProduct.name"
+            placeholder="User Name">
+        </div>
+        
+        <p>Email :</p>
+        <div class="form-group">
+          <input
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="category"
+            #category="ngModel"
+            [(ngModel)]="productService.selectedProduct.email"
+            placeholder="User Email">
+        </div>
+
+        <p>Phone Number :</p>
+        <div class="form-group">
+          <input
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="price"
+            #price="ngModel"
+            [(ngModel)]="productService.selectedProduct.phone"
+            placeholder="User Phone">
+        </div>
+
+        <p>Birth Day :</p>
+        <div class="form-group">
+          <input
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="location"
+            #location="ngModel"
+            [(ngModel)]="productService.selectedProduct.date"
+            placeholder="User Birth Day">
+        </div>
+
+        <p>User's Friends :</p>
+        <div class="form-group">
+          <textarea
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="friends"
+            #friend="ngModel"
+            [(ngModel)]="productService.selectedProduct.friendsnames"
+            placeholder="User Friends"></textarea>
+        </div>
+        <p>User's Device ID :</p>
+        <div class="form-group">
+          <textarea
+          disabled="disabled"
+            type="text"
+            class="form-control"
+            name="imei"
+            #imei="ngModel"
+            [(ngModel)]="productService.selectedProduct.imei"
+            placeholder="User UID"></textarea>
+        </div>
+        
+      </div>
+
+      <div class="form-group">
+      
+        <button class="btn btn-secondary" type="reset" (click)="resetFormEvent(productForm)">
+          <i class="fas fa-sync-alt"></i>
+          Reset
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

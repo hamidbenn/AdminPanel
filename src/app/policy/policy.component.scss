@@ -1,0 +1,127 @@
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* Add styles to the form container */
+.container {
+  max-width: 90%;
+  padding: 16px;
+  background-color: rgb(37, 5, 58);
+  opacity: 0.4;
+
+}
+
+.form-container {
+  height: 100%;
+  display: grid;
+  align-content: center;
+  .form-container-inner {
+    .formclass {
+      margin: auto;
+    }
+  }
+}
+
+
+
+/* Full-width input fields */
+input[type='text'],
+input[type='password'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #7f1bc2;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.button {     
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;  
+  color: #45c8d1;      
+}
+
+.button :hover {
+  background-color: #7f1bc2;
+  color: #7f1bc2;
+}
+
+h1 {
+  color: #7f1bc2;
+  align-content: center;
+
+}
+
+h1:hover {
+  color: #d145c5;
+
+}
+
+h2 {
+    color: #ffffff;
+    align-content: center;
+  
+  }
+  
+h2:hover {
+    color: #d671df;
+  
+  }
+
+h6 {
+  color: #9613e2;
+  align-content: center;
+
+}
+
+p {
+    color: white,
+}
+
+h6:hover {
+  color: #e63535;
+
+}
+.a {
+  color: rgb(234, 0, 255);
+  padding: 10px;
+
+}
+a :hover {
+  color: wheat;
+
+}
+
+h4 {
+    color: wheat;
+}

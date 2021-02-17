@@ -1,0 +1,32 @@
+<div class="card mt-2"  class="text-right" style="border: none">
+  <div class="card-body">
+    <h3 class="text-center">Users</h3>
+    <table class="table table-sm table-hover">
+      <tbody>
+       
+       <tr>
+        <th scope="col">Full Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Birth Day</th>
+      </tr>
+      <tr *ngFor="let product of productList">
+        <td>{{product.name}}</td>
+        <td>{{product.email}}</td>
+        <td>{{product.phone}}</td>
+        <td>{{product.date}}</td>
+       <td> </td>
+      
+        <button class="btn btn-primary" (click)="onEditEvent(product)">
+          Details
+        </button>
+        <a class="btn btn-danger text-white" (click)="onDeleteEvent(product.$key)">
+          <i class="fas fa-trash-alt"></i>
+          Delete
+        </a>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
